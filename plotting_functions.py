@@ -27,10 +27,10 @@ def trajectory_plots(time, vert_pos, vert_veloc, vert_acc):
     plt.grid()
     plt.show()
     
-    
+#Plots horizontal position, horizontal velocity, and trajectory    
 def horizontal_plots(time, horiz_pos, horiz_vel, vert_pos):
     
-    #Plotting horizaontal trajectory vs time
+    #Plotting horizontal trajectory vs time
     plt.plot(time, horiz_pos)
     plt.title("Horizontal Position vs. Time")
     plt.xlabel("Time (Seconds)")
@@ -46,7 +46,7 @@ def horizontal_plots(time, horiz_pos, horiz_vel, vert_pos):
     plt.grid()
     plt.show()
     
-    #Plotting trajecgory
+    #Plotting trajectory
     plt.plot(horiz_pos, vert_pos)
     plt.title("Trajectory of Launch Vehicle")
     plt.xlabel("Horizontal Posiition (Feet)")
